@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+     3	<html lang="en">
+     4	<head>
+     5	<meta charset="UTF-8">
+     6	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7	<title>APPLICATION FORM — DOEACC (O Level)</title>
+     8	<style>
+     9	* { box-sizing: border-box; }
+    10	
+    11	body {
+    12	  font-family: "Segoe UI", Arial, sans-serif;
+    13	  margin: 0;
+    14	  padding: 45px 20px;
+    15	  min-height: 100vh;
+    16	  color: #172033;
+    17	  background:
+    18	    radial-gradient(circle at 10% 10%, rgba(99,102,241,.35), transparent 28%),
+    19	    radial-gradient(circle at 90% 20%, rgba(6,182,212,.30), transparent 25%),
+    20	    radial-gradient(circle at 50% 100%, rgba(236,72,153,.25), transparent 30%),
+    21	    linear-gradient(135deg, #07111f, #172554 45%, #312e81);
+    22	  background-attachment: fixed;
+    23	}
+    24	
+    25	body::before {
+    26	  content: "";
+    27	  position: fixed;
+    28	  inset: 0;
+    29	  pointer-events: none;
+    30	  background: linear-gradient(120deg, rgba(255,255,255,.06), transparent 40%, rgba(255,255,255,.04));
+    31	}
+    32	
+    33	h3 {
+    34	  text-align: center;
+    35	  margin: 0 auto 28px;
+    36	  color: white;
+    37	  font-size: clamp(28px, 4vw, 42px);
+    38	  font-weight: 800;
+    39	  letter-spacing: 4px;
+    40	  text-shadow: 0 8px 25px rgba(0,0,0,.45);
+    41	  transform: perspective(500px) rotateX(4deg);
+    42	}
+    43	
+    44	form {
+    45	  position: relative;
+    46	  max-width: 1100px;
+    47	  margin: 0 auto;
+    48	  padding: 28px;
+    49	  background: rgba(255,255,255,.94);
+    50	  border: 1px solid rgba(255,255,255,.7);
+    51	  border-radius: 24px;
+    52	  box-shadow:
+    53	    0 30px 70px rgba(0,0,0,.35),
+    54	    0 8px 20px rgba(0,0,0,.18),
+    55	    inset 0 1px 0 rgba(255,255,255,.9);
+    56	  backdrop-filter: blur(18px);
+    57	  transform: perspective(1400px) rotateX(.6deg);
+    58	}
+    59	
+    60	fieldset {
+    61	  border: 0;
+    62	  border-radius: 18px;
+    63	  padding: 20px;
+    64	  margin-bottom: 20px;
+    65	  background: linear-gradient(145deg, #ffffff, #eef4ff);
+    66	  box-shadow:
+    67	    10px 10px 22px rgba(25,45,90,.12),
+    68	    -5px -5px 15px rgba(255,255,255,.9),
+    69	    inset 0 0 0 1px rgba(99,102,241,.12);
+    70	  transition: transform .25s ease, box-shadow .25s ease;
+    71	}
+    72	
+    73	fieldset:hover {
+    74	  transform: translateY(-3px) rotateX(.4deg);
+    75	  box-shadow:
+    76	    14px 18px 30px rgba(25,45,90,.16),
+    77	    -5px -5px 15px rgba(255,255,255,.95),
+    78	    inset 0 0 0 1px rgba(99,102,241,.2);
+    79	}
+    80	
+    81	legend {
+    82	  padding: 8px 18px;
+    83	  border-radius: 999px;
+    84	  color: white;
+    85	  font-weight: 800;
+    86	  letter-spacing: .6px;
+    87	  background: linear-gradient(135deg, #4f46e5, #06b6d4, #ec4899);
+    88	  box-shadow: 0 7px 16px rgba(79,70,229,.28);
+    89	}
+    90	
+    91	table { width: 100%; border-collapse: separate; border-spacing: 0 5px; }
+    92	table, th, td { border: none; }
+    93	td { padding: 9px 10px; vertical-align: middle; }
+    94	
+    95	td:first-child, td:nth-child(3) {
+    96	  color: #334155;
+    97	  font-weight: 700;
+    98	}
+    99	
+   100	input[type=text],
+   101	input[type=email],
+   102	input[type=tel],
+   103	input[type=date],
+   104	select {
+   105	  width: 100%;
+   106	  max-width: 300px;
+   107	  padding: 11px 13px;
+   108	  color: #172033;
+   109	  background: rgba(255,255,255,.96);
+   110	  border: 1px solid #c7d2fe;
+   111	  border-radius: 10px;
+   112	  outline: none;
+   113	  box-shadow:
+   114	    inset 2px 2px 5px rgba(30,41,59,.07),
+   115	    0 3px 8px rgba(30,41,59,.05);
+   116	  transition: .2s ease;
+   117	}
+   118	
+   119	input[type=text]:focus,
+   120	input[type=email]:focus,
+   121	input[type=tel]:focus,
+   122	input[type=date]:focus,
+   123	select:focus {
+   124	  border-color: #6366f1;
+   125	  box-shadow:
+   126	    0 0 0 4px rgba(99,102,241,.13),
+   127	    0 8px 18px rgba(79,70,229,.14);
+   128	  transform: translateY(-1px);
+   129	}
+   130	
+   131	input[type=file] {
+   132	  max-width: 300px;
+   133	  padding: 9px;
+   134	  border: 1px dashed #818cf8;
+   135	  border-radius: 10px;
+   136	  background: #f5f7ff;
+   137	}
+   138	
+   139	.checks label {
+   140	  margin-right: 5px;
+   141	  font-weight: 600;
+   142	  color: #475569;
+   143	}
+   144	
+   145	input[type=radio],
+   146	input[type=checkbox] {
+   147	  accent-color: #6366f1;
+   148	  transform: scale(1.15);
+   149	  margin: 0 13px 0 4px;
+   150	}
+   151	
+   152	.lang-table {
+   153	  overflow: hidden;
+   154	  border-radius: 14px;
+   155	  box-shadow: 0 8px 18px rgba(30,41,59,.08);
+   156	}
+   157	
+   158	.lang-table th,
+   159	.lang-table td {
+   160	  border: 1px solid #dbeafe;
+   161	  padding: 12px;
+   162	  text-align: center;
+   163	}
+   164	
+   165	.lang-table th {
+   166	  color: white;
+   167	  background: linear-gradient(135deg, #4f46e5, #0891b2);
+   168	}
+   169	
+   170	.lang-table tr:nth-child(even) td { background: #f8faff; }
+   171	.lang-table tr:hover td { background: #eef2ff; }
+   172	
+   173	.center {
+   174	  text-align: center;
+   175	  margin-top: 24px;
+   176	}
+   177	
+   178	input[type=submit],
+   179	input[type=reset] {
+   180	  position: relative;
+   181	  padding: 13px 34px;
+   182	  margin: 0 8px;
+   183	  border: 0;
+   184	  border-radius: 12px;
+   185	  cursor: pointer;
+   186	  color: white;
+   187	  font-size: 15px;
+   188	  font-weight: 800;
+   189	  letter-spacing: .5px;
+   190	  box-shadow: 0 9px 18px rgba(15,23,42,.22);
+   191	  transition: transform .2s ease, box-shadow .2s ease;
+   192	}
+   193	
+   194	input[type=submit] {
+   195	  background: linear-gradient(135deg, #16a34a, #06b6d4, #2563eb);
+   196	}
+   197	
+   198	input[type=reset] {
+   199	  background: linear-gradient(135deg, #ef4444, #ec4899, #9333ea);
+   200	}
+   201	
+   202	input[type=submit]:hover,
+   203	input[type=reset]:hover {
+   204	  transform: translateY(-3px) scale(1.03);
+   205	  box-shadow: 0 14px 25px rgba(15,23,42,.28);
+   206	}
+   207	
+   208	input[type=submit]:active,
+   209	input[type=reset]:active {
+   210	  transform: translateY(1px) scale(.98);
+   211	}
+   212	
+   213	@media (max-width: 800px) {
+   214	  body { padding: 25px 10px; }
+   215	  form { padding: 15px; border-radius: 18px; }
+   216	  fieldset { padding: 12px; }
+   217	  table, tbody, tr, td { display: block; width: 100%; }
+   218	  td { padding: 7px 4px; }
+   219	  td:nth-child(3) { margin-top: 8px; }
+   220	  input[type=text], input[type=email], input[type=tel],
+   221	  input[type=date], select, input[type=file] { max-width: 100%; }
+   222	  .lang-table { display: table; }
+   223	  .lang-table tbody { display: table-row-group; }
+   224	  .lang-table tr { display: table-row; }
+   225	  .lang-table th, .lang-table td { display: table-cell; }
+   226	}
+   227	</style>
+   228	</head>
+   229	<body>
+   230	
+   231	<center><h3>APPLICATION FORM</h3></center>
+   232	
+   233	<form action="#" method="post" enctype="multipart/form-data">
+   234	
+   235	  <!-- ============== PERSONAL DETAILS ============== -->
+   236	  <fieldset>
+   237	    <legend>Personal Details</legend>
+   238	    <table width="100%" cellpadding="10px">
+   239	
+   240	      <tr>
+   241	        <td>Applicant's full name</td>
+   242	        <td>
+   243	          <select>
+   244	            <option>--Select--</option>
+   245	            <option>Mr.</option>
+   246	            <option>Ms.</option>
+   247	            <option>Others</option>
+   248	          </select>
+   249	          <input type="text" size="20" placeholder="Full Name" required>
+   250	        </td>
+   251	        <td>Care Of</td>
+   252	        <td class="checks">
+   253	          <label>Parents</label><input type="radio" name="care" checked>
+   254	          <label>Guardian</label><input type="radio" name="care">
+   255	        </td>
+   256	      </tr>
+   257	
+   258	      <tr>
+   259	        <td>Father's Name</td>
+   260	        <td>
