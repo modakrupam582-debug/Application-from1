@@ -253,6 +253,224 @@
    254	          <label>Guardian</label><input type="radio" name="care">
    255	        </td>
    256	      </tr>
+              <tr>
+   259	        <td>Father's Name</td>
+   260	        <td>
+   261	          <select disabled>
+   262	            <option>Mr.</option>
+   263	          </select>
+   264	          <input type="text" size="20" placeholder="Father's Name" required>
+   265	        </td>
+   266	        <td>Mother's Name</td>
+   267	        <td>
+   268	          <select disabled>
+   269	            <option>Mrs.</option>
+   270	          </select>
+   271	          <input type="text" size="20" placeholder="Mother's Name" required>
+   272	        </td>
+   273	      </tr>
+   274	
+   275	      <tr>
+   276	        <td>Gender</td>
+   277	        <td class="checks">
+   278	          <label>Male</label><input type="radio" name="Gender">
+   279	          <label>Female</label><input type="radio" name="Gender">
+   280	          <label>Others</label><input type="radio" name="Gender">
+   281	        </td>
+   282	        <td>Date of Birth</td>
+   283	        <td><input type="date" required></td>
+   284	      </tr>
+   285	
+   286	      <tr>
+   287	        <td>Marital Status</td>
+   288	        <td>
+   289	          <select>
+   290	            <option>--Select--</option>
+   291	            <option>Single</option>
+   292	            <option>Married</option>
+   293	            <option>Divorced</option>
+   294	            <option>Widowed</option>
+   295	          </select>
+   296	        </td>
+   297	        <td>Category</td>
+   298	        <td>
+   299	          <select>
+   300	            <option>--Select--</option>
+   301	            <option>General</option>
+   302	            <option>OBC</option>
+   303	            <option>SC</option>
+   304	            <option>ST</option>
+   305	          </select>
+   306	        </td>
+   307	      </tr>
+   308	
+   309	      <tr>
+   310	        <td>Handicapped</td>
+   311	        <td class="checks">
+   312	          <label>No</label><input type="radio" name="Handicapped" checked>
+   313	          <label>Yes</label><input type="radio" name="Handicapped">
+   314	        </td>
+   315	        <td>Ex-Serviceman</td>
+   316	        <td class="checks">
+   317	          <label>No</label><input type="radio" name="Serviceman" checked>
+   318	          <label>Yes</label><input type="radio" name="Serviceman">
+   319	        </td>
+   320	      </tr>
+   321            <tr>
+   323	        <td>EWS</td>
+   324	        <td class="checks">
+   325	          <label>No</label><input type="radio" name="EWS" checked>
+   326	          <label>Yes</label><input type="radio" name="EWS">
+   327	        </td>
+   328	        <td>Religion</td>
+   329	        <td>
+   330	          <select>
+   331	            <option>--Select--</option>
+   332	            <option>Hindu</option>
+   333	            <option>Muslim</option>
+   334	            <option>Jain</option>
+   335	            <option>Christianity</option>
+   336	          </select>
+   337	        </td>
+   338	      </tr>
+   339	
+   340	    </table>
+   341	  </fieldset>
+   342	
+   343	  <!-- ============== CONTACT DETAILS ============== -->
+   344	  <fieldset>
+   345	    <legend>Contact Details</legend>
+   346	    <table width="100%" cellpadding="10px">
+   347	
+   348	      <tr>
+   349	        <td>Mobile Number</td>
+   350	        <td><input type="tel" placeholder="10-digit mobile" pattern="[0-9]{10}" required></td>
+   351	        <td>Email ID</td>
+   352	        <td><input type="email" placeholder="you@example.com" required></td>
+   353	      </tr>
+   354	
+   355	      <tr>
+   356	        <td>Address Line 1</td>
+   357	        <td><input type="text" placeholder="House No., Street" required></td>
+   358	        <td>Address Line 2</td>
+   359	        <td><input type="text" placeholder="Locality, Landmark"></td>
+   360	      </tr>
+   361	
+   362	      <tr>
+   363	        <td>City</td>
+   364	        <td><input type="text" placeholder="City" required></td>
+   365	        <td>State</td>
+   366	        <td>
+   367	          <select required>
+   368	            <option value="">--Select--</option>
+   369	            <option value="Andhra Pradesh">Andhra Pradesh</option>
+   370	            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+   371	            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+   372	            <option value="Assam">Assam</option>
+   373	            <option value="Bihar">Bihar</option>
+   374	            <option value="Chandigarh">Chandigarh</option>
+   375	            <option value="Chhattisgarh">Chhattisgarh</option>
+   376	            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+   377	            <option value="Daman and Diu">Daman and Diu</option>
+   378	            <option value="Delhi">Delhi</option>
+   379	            <option value="Lakshadweep">Lakshadweep</option>
+   380	            <option value="Puducherry">Puducherry</option>
+   381	            <option value="Goa">Goa</option>
+   382	            <option value="Gujarat">Gujarat</option>
+   383	            <option value="Haryana">Haryana</option>
+   384	            <option value="Himachal Pradesh">Himachal Pradesh</option>
+   385	            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+   386	            <option value="Jharkhand">Jharkhand</option>
+   387	            <option value="Karnataka">Karnataka</option>
+   388	            <option value="Kerala">Kerala</option>
+   389	            <option value="Madhya Pradesh">Madhya Pradesh</option>
+   390	            <option value="Maharashtra">Maharashtra</option>
+   391	            <option value="Manipur">Manipur</option>
+   392	            <option value="Meghalaya">Meghalaya</option>
+   393	            <option value="Mizoram">Mizoram</option>
+   394	            <option value="Nagaland">Nagaland</option>
+   395	            <option value="Odisha">Odisha</option>
+   396	            <option value="Punjab">Punjab</option>
+   397	            <option value="Rajasthan">Rajasthan</option>
+   398	            <option value="Sikkim">Sikkim</option>
+   399	            <option value="Tamil Nadu">Tamil Nadu</option>
+   400	            <option value="Telangana">Telangana</option>
+   401	            <option value="Tripura">Tripura</option>
+   402	            <option value="Uttar Pradesh">Uttar Pradesh</option>
+   403	            <option value="Uttarakhand">Uttarakhand</option>
+   404	            <option value="West Bengal">West Bengal</option>
+   405	          </select>
+   406	        </td>
+   407	      </tr>
+   408	
+   409	      <tr>
+   410	        <td>Pin Code</td>
+   411	        <td><input type="text" maxlength="6" pattern="[0-9]{6}" placeholder="6-digit PIN" required></td>
+   412	      </tr>
+   413	
+   414	    </table>
+   415	  </fieldset>
+   416	
+   417	  <!-- ============== LANGUAGE KNOWLEDGE ============== -->
+   418	  <fieldset>
+   419	    <legend>Language Knowledge</legend>
+   420	    <table class="lang-table" width="100%">
+   421	      <tr>
+   422	        <th>Language</th>
+   423	        <th>Reading</th>
+   424	        <th>Writing</th>
+   425	        <th>Spoken</th>
+   426	      </tr>
+   427	      <tr>
+   428	        <td>Hindi</td>
+   429	        <td><input type="checkbox" name="lang_hindi_r"></td>
+   430	        <td><input type="checkbox" name="lang_hindi_w"></td>
+   431	        <td><input type="checkbox" name="lang_hindi_s"></td>
+   432	      </tr>
+   433	      <tr>
+   434	        <td>English</td>
+   435	        <td><input type="checkbox" name="lang_english_r"></td>
+   436	        <td><input type="checkbox" name="lang_english_w"></td>
+   437	        <td><input type="checkbox" name="lang_english_s"></td>
+   438	      </tr>
+   439	      <tr>
+   440	        <td>Urdu</td>
+   441	        <td><input type="checkbox" name="lang_urdu_r"></td>
+   442	        <td><input type="checkbox" name="lang_urdu_w"></td>
+   443	        <td><input type="checkbox" name="lang_urdu_s"></td>
+   444	      </tr>
+   445	    </table>
+   446	  </fieldset>
+   447	
+   448	  <!-- ============== IDENTIFICATION DETAILS ============== -->
+   449	  <fieldset>
+   450	    <legend>Identification Details</legend>
+   451	    <table>
+   452	      <tr>
+   453	        <td>Aadhar Card Number</td>
+   454	        <td><input type="text" maxlength="12" pattern="[0-9]{12}" placeholder="12-digit Aadhaar"></td>
+   455	        <td>PAN Card Number</td>
+   456	        <td><input type="text" maxlength="9" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" placeholder="ABCDE1234F"></td>
+   457	      </tr>
+   458	      <tr>
+   459	        <td>Upload Photo</td>
+   460	        <td><input type="file" accept="image/*"></td>
+   461	        <td>Upload Signature</td>
+   462	        <td><input type="file" accept="image/*"></td>
+   463	      </tr>
+   464	    </table>
+   465	  </fieldset>
+   466	
+   467	  <br>
+   468	  <div class="center">
+   469	    <input type="submit" value="Submit">
+   470	    <input type="reset" value="Back">
+   471	  </div>
+   472	
+   473	</form>
+   474	
+   475	</body>
+   476	</html>
    257	
    258	      <tr>
    259	        <td>Father's Name</td>
